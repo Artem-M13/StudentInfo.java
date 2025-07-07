@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Main {
 
 
-  //  public static void main(String[] args) {
-        //Змінні
+    //  public static void main(String[] args) {
+    //Змінні
 //        String name = "Artem";
 //      int age = 29;
 //        double AverageBal = 10.5;
@@ -17,7 +17,7 @@ public class Main {
 //        System.out.println("Середній бал:" + AverageBal);
 //        System.out.println("Актив:" + Acyive);
 
-        // змінні з оцінками
+    // змінні з оцінками
 //        int Number1 = 7;
 //        int Number2 = 9;
 //
@@ -43,8 +43,44 @@ public class Main {
 //                System.out.println("Доступ заборонено");
 //            } else {
 //                System.out.println("Доступ дозволено");
+
+
+    // Цикл FOR
 //
-            }
+//public static void main(String[] args){
+//
+//    for (int a = 1; a <= 5; a++){
+//        System.out.println(a);
+//    }
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+
+        String Monday = scan.nextLine();
+
+        switch (Monday) {
+            case "Monday":
+            case "Tuesday":
+            case "Wednesday":
+            case "Thursday":
+            case "Friday":
+                System.out.print("Робочий деннь");
+                break;
+            case "Saturday":
+            case "Sunday":
+                System.out.print("Вихідний день");
+
+
+        }
+
+
+    }
+
+
+}
+
 
 
 
