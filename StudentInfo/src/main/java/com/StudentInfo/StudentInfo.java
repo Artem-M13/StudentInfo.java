@@ -1,7 +1,5 @@
+package com.StudentInfo;
 
-
-
-import java.util.Scanner;
 
 public class StudentInfo {
 
@@ -21,64 +19,52 @@ public class StudentInfo {
     double share = (double) number1 / number2;
 
     public void getInfo() {
-        System.out.println("Ім'я:" + name);
-        System.out.println("Вік:" + age);
-        System.out.println("Середній бал:" + averageScore);
-        System.out.println("Актив:" + active);
+        System.out.println("Ім'я: " + name);
+        System.out.println("Вік: " + age);
+        System.out.println("Середній бал: " + averageScore);
+        System.out.println("Актив: " + active);
     }
 
     public void calculator() {
         // Обчислення
-        System.out.println("Сума:" + sum);
-        System.out.println("Різниця:" + difference);
-        System.out.println("Добуток:" + product);
-        System.out.println("Чачтка:" + share);
+        System.out.println("Сума: " + sum);
+        System.out.println("Різниця: " + difference);
+        System.out.println("Добуток: " + product);
+        System.out.println("Частка: " + share);
     }
 
-    // перевірка віку
-
-
-    int age4 = 29;
-
-//        if (age < 18) {
-//        System.out.println("Доступ заборонено");
-//    } else {
-//        System.out.println("Доступ дозволено");
-//
-//
-//        //   Цикл FOR
-//
-//
-//        for (int a = 1; a <= 5; a++) {
-//            System.out.println(a);
-//        }
-//
-//// перевірка дня тижня
-//
-//        Scanner scan = new Scanner(System.in);
-//
-//
-//        String Monday = scan.nextLine();
-//
-//        switch (Monday) {
-//            case "Monday":
-//            case "Tuesday":
-//            case "Wednesday":
-//            case "Thursday":
-//            case "Friday":
-//                System.out.print("Робочий деннь");
-//                break;
-//            case "Saturday":
-//            case "Sunday":
-//                System.out.print("Вихідний день");
-//
-//        }
-//    }
-
     public static void main(String[] args) {
+
+        int age = 18;
+
         StudentInfo studentInfo = new StudentInfo();
 
         studentInfo.getInfo();
+        studentInfo.calculator();
+
+        String day = "Saturday";
+        switch (day) {
+            case "Monday":
+            case "Tuesday":
+            case "Wednesday":
+            case "Thursday":
+            case "Friday":
+                System.out.print("Робочий день");
+                break;
+            case "Saturday":
+            case "Sunday":
+                System.out.print("Вихідний день");
+        }
+
+        if(age < 18) {
+            System.out.println("Доступ заборонено");
+        } else {
+            System.out.println("Доступ дозволено");
+        }
+
+        for (int a = 1; a <= 5; a++) {
+            System.out.println(a);
+        }
     }
 }
 
