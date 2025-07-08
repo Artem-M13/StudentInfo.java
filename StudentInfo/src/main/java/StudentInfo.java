@@ -37,7 +37,7 @@ public class StudentInfo {
            // перевірка віку
 
 
-        int age1 = 29;
+        int age2 = 29;
 
         if (age < 18) {
             System.out.println("Доступ заборонено");
