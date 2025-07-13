@@ -1,5 +1,7 @@
 package com.StudentInfo;
 
+import java.util.ArrayList;
+
 
 public class StudentInfo {
 
@@ -42,21 +44,21 @@ public class StudentInfo {
         studentInfo.getInfo();
         studentInfo.calculator();
 
-        String day = "Saturday";
+        String day = "Tuesday";
         switch (day) {
             case "Monday":
             case "Tuesday":
             case "Wednesday":
             case "Thursday":
             case "Friday":
-                System.out.print("Робочий день");
+                System.out.println("Робочий день");
                 break;
             case "Saturday":
             case "Sunday":
-                System.out.print("Вихідний день");
+                System.out.println("Вихідний день");
         }
 
-        if(age < 18) {
+        if (age > 18) {
             System.out.println("Доступ заборонено");
         } else {
             System.out.println("Доступ дозволено");
@@ -65,6 +67,93 @@ public class StudentInfo {
         for (int a = 1; a <= 5; a++) {
             System.out.println(a);
         }
-    }
-}
+        /////////////////////////////////////////////
+
+        // Створюємо масив з 5 студентів
+
+        {
+            String[] students = {"Артем", "Богдан", "Анна", "Руслан", "Павло"};
+
+            //Прохдимося по масиву циклом for
+
+            for (int i = 0; i < students.length; i++) {
+                System.out.println(students[i]);
+            }
+            // Створення списку з трьома містами
+            ArrayList<String> cities = new ArrayList<>();
+            cities.add("Київ");
+            cities.add("Львів");
+            cities.add("Одеса");
+
+            // Додавання ще одного міста
+            cities.add("Харків");
+
+            // Виведення всього списку
+
+            for (int i = 0; i < cities.size(); i++) {
+                System.out.println(cities.get(i));
+            }
+        }
+              // Ділення
+        Calculator.divide(10, 2);
+        Calculator.divide(10, 0);
+
+        //Перевірка  очікуваного і фактичного значення
+         TestCheck.check();
+
+
+
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
