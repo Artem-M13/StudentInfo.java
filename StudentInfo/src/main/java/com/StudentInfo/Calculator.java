@@ -1,20 +1,61 @@
 package com.StudentInfo;
 
 public class Calculator {
-    public int add(int a, int b){
+    public int add(int a, int b) {
+
         return a + b;
+
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
+            // Створення об'єкта калькулятора
+            Calculator calculator = new Calculator();
 
+            // Виклик методу add і збереження результату
+            int result = calculator.add(5, 7);
 
-        // Створення об'єкта калькулятора
-        Calculator calculator = new Calculator();
+            // Виведення результату
+            System.out.println("Сума: " + result);
 
-        // Виклик методу add і збереження результату
-        int result = calculator.add(5, 7);
+        }
+public static void divide(int a, int b){
 
-        // Виведення результату
-        System.out.println("Сума: " + result);
-    }
+        try {
+            int result = a / b;
+            System.out.println("Результат: " + result);
+        }catch (ArithmeticException e){
+            System.out.println("На нуль ділити не можна");
+        }
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
