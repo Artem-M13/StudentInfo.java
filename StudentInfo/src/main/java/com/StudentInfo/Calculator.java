@@ -9,6 +9,7 @@ public class Calculator {
 
     public static void main(String[] args){
             // Створення об'єкта калькулятора
+
             Calculator calculator = new Calculator();
 
             // Виклик методу add і збереження результату
