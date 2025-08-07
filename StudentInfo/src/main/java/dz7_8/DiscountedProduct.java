@@ -8,7 +8,6 @@ public class DiscountedProduct extends Product {
         super(name, price, available); // виклик конструктора батьківського класу
         this.discount = discount;
     }
-
     // Метод, який розраховує нову ціну з урахуванням знижки
     public double getDiscountedPrice() {
         return getPrice() - (getPrice() * discount / 100);
