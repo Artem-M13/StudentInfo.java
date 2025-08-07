@@ -12,13 +12,13 @@ public class Main {
         Product laptop = new Product("Ноутбук", 9339.99, false);
         Product monitor = new Product("Монітор", 323.43, true);
         Product phone1 = new Product("Смартфон", 12000.0, true);
+
         // Виведення інформації про обидва продукти
         phone.printProductInfo();
-        System.out.println();  //Порожній рядок для розділення
+        System.out.println();     // Порожній рядок для розділення
         laptop.printProductInfo();
 
-
-        //  товар зі знижкою
+        // товар зі знижкою
         DiscountedProduct discountedLaptop = new DiscountedProduct("Ноутбук", 30000.0, true, 10.0);
 
         // Вивід інформації про звичайний товар
@@ -29,24 +29,21 @@ public class Main {
         System.out.println("\n=== Інформація про товар зі знижкою ===");
         laptop.printProductInfo();
 
-
         User admin = new Admin("Олег");
         User customer = new Customer("Наталія");
 
-
-// Створення списку продуктів
+        // Створення списку продуктів
         ArrayList<Product> products = new ArrayList<>();
         products.add(phone);
         products.add(laptop);
         products.add(phone1);
 
-// Вивід усіх продуктів зі списку
+        // Вивід усіх продуктів зі списку
         System.out.println("\n=== Список усіх продуктів ===");
         for (Product product : products) {
             product.printProductInfo();
             System.out.println("-----------------------");
         }
-
         // Створення HashSet з унікальними категоріями
         HashSet<String> categories = new HashSet<>();
 
@@ -61,7 +58,6 @@ public class Main {
         for (String category : categories) {
             System.out.println("- " + category);
         }
-
         // Перевірка, чи є категорія
         String searchCategory = "Електроніка";
 
@@ -83,7 +79,6 @@ public class Main {
         for (Map.Entry<String, Double> entry : productPrices.entrySet()) {
             System.out.println("Назва: " + entry.getKey() + " — Ціна: " + entry.getValue() + " грн");
         }
-
             divideNumbers(10, 2);   // нормальний випадок
             divideNumbers(5, 0);    // ділення на нуль
         }
@@ -103,14 +98,8 @@ public class Main {
             try {
                ProductChecker.checkPrice(1200.0);  // коректна ціна
                 ProductChecker.checkPrice(0);      // некоректна
-            }  catch (InvalidPriceException e) {
+            } catch (InvalidPriceException e) {
                 System.out.println("Виняток: " + e.getMessage());
-
             }
         }
     }
-
-
-
-
-

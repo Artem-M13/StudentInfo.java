@@ -1,7 +1,7 @@
 package dz7_8;
 
-
 public class Product {
+
     // Поля класу
     public String name;
     public double price;
@@ -13,7 +13,6 @@ public class Product {
         this.price = price;
         this.available = available;
     }
-
     // Геттери
     public String getName() {
         return name;
@@ -34,11 +33,3 @@ public class Product {
             System.out.println("Наявність: " + (getAvailable() ? "В наявності" : "Немає в наявності"));
         }
 }
-
-
-
-
-
-
-
-

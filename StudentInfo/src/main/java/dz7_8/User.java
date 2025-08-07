@@ -1,6 +1,5 @@
 package dz7_8;
 
-
 public abstract class User {
     protected String name;
 

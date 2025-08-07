@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class StudentInfo {
 
-    //   Змінні
+    // Змінні
     String name = "Artem";
     int age = 29;
     double averageScore = 10.5;
     boolean active = true;
 
-    //   змінні з оцінками
+    // Змінні з оцінками
     int number1 = 7;
     int number2 = 9;
 
@@ -25,7 +25,6 @@ public class StudentInfo {
         System.out.println("Середній бал: " + averageScore);
         System.out.println("Актив: " + active);
     }
-
     public void calculator() {
         // Обчислення
         System.out.println("Сума: " + sum);
@@ -33,13 +32,11 @@ public class StudentInfo {
         System.out.println("Добуток: " + product);
         System.out.println("Частка: " + share);
     }
-
     public static void main(String[] args) {
 
         int age = 18;
 
         StudentInfo studentInfo = new StudentInfo();
-
         studentInfo.getInfo();
         studentInfo.calculator();
 
@@ -56,7 +53,6 @@ public class StudentInfo {
             case "Sunday":
                 System.out.println("Вихідний день");
         }
-
         if (age > 18) {
             System.out.println("Доступ заборонено");
         } else {
@@ -66,15 +62,11 @@ public class StudentInfo {
         for (int a = 1; a <= 5; a++) {
             System.out.println(a);
         }
-        /////////////////////////////////////////////
-
-        // Створюємо масив з 5 студентів
-
+            // Створюємо масив з 5 студентів
         {
             String[] students = {"Артем", "Богдан", "Анна", "Руслан", "Павло"};
 
-            //Прохдимося по масиву циклом for
-
+            // Прохдимося по масиву циклом for
             for (int i = 0; i < students.length; i++) {
                 System.out.println(students[i]);
             }
@@ -88,102 +80,15 @@ public class StudentInfo {
             cities.add("Харків");
 
             // Виведення всього списку
-
             for (int i = 0; i < cities.size(); i++) {
                 System.out.println(cities.get(i));
             }
         }
-        // Ділення
+            // Ділення
         Calculator.divide(10, 2);
         Calculator.divide(10, 0);
 
-        //Перевірка  очікуваного і фактичного значення
-        TestCheck.check();
+            // Перевірка  очікуваного і фактичного значення
+         TestCheck.check();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
