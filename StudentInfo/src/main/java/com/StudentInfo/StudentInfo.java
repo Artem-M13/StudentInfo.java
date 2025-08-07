@@ -3,6 +3,7 @@ package com.StudentInfo;
 import java.util.ArrayList;
 
 
+
 public class StudentInfo {
 
     //   Змінні
@@ -94,17 +95,92 @@ public class StudentInfo {
                 System.out.println(cities.get(i));
             }
         }
-              // Ділення
+        // Ділення
         Calculator.divide(10, 2);
         Calculator.divide(10, 0);
 
         //Перевірка  очікуваного і фактичного значення
-         TestCheck.check();
+        TestCheck.check();
+
+
+    }
+
+    // Створення першого продукту - Телефон
+    Product phone = new Product("Телефон", 999.99, true);
+
+    {
+        // Створення другого продукту - Ноутбук
+        Product laptop = new Product("Ноутбук", 9339.99, false);
+        // Виведення інформації про обидва продукти
+        phone.printProductInfo();
+        System.out.println();  //Порожній рядок для розділення
+        laptop.printProductInfo();
+    }
+
+    {
+        Product phone = new Product("Смартфон", 12000.0, true);
+
+        //  товар зі знижкою
+        DiscountedProduct laptop = new DiscountedProduct("Ноутбук", 30000.0, true, 10.0);
+
+        // Вивід інформації про звичайний товар
+        System.out.println("=== Інформація про товар ===");
+        phone.printProductInfo();
+
+        // Вивід інформації про товар зі знижкою
+        System.out.println("\n=== Інформація про товар зі знижкою ===");
+        laptop.printProductInfo();
+
+
+        User admin = new Admin("Олег");
+        User customer = new Customer("Наталія");
+
+        printUserInfo(admin);
+        printUserInfo(customer);
+    }
+
+    public static void printUserInfo(User user) {
+        System.out.println("Ім'я: " + user.getName());
+        System.out.println("Роль: " + user.getRole());
+        System.out.println("-----------");
+    }
+
+
+    }
 
 
 
-                }
-            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
