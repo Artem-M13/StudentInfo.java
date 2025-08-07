@@ -1,14 +1,12 @@
-package com.StudentInfo;
+package dz7_8;
 
 public class DiscountedProduct extends Product {
-
 
     private double discount;  // знижка у відсотках, наприклад: 10.0 = 10%
 
     public DiscountedProduct(String name, double price, boolean available, double discount) {
         super(name, price, available); // виклик конструктора батьківського класу
         this.discount = discount;
-        System.out.println(super.getPrice());
     }
 
     // Метод, який розраховує нову ціну з урахуванням знижки

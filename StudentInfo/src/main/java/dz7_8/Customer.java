@@ -1,4 +1,4 @@
-package com.StudentInfo;
+package dz7_8;
 
 public class Customer extends User {
 
